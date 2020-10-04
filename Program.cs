@@ -9,8 +9,8 @@ namespace uwp
     {
         static void Main(string[] args)
         {
-            var f = new Entities.Units.Folower("liember");
-            Console.WriteLine(f.Health);
+            // var f = new Entities.Units.Human("sadasd");
+            // Console.WriteLine(f.GetHealth());
         }
     }
 }
