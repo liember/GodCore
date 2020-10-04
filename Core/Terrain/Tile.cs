@@ -8,12 +8,10 @@ namespace Terrain
     {
         private bool Occupied;
         protected int MaxLocatedEntities = 10;
-        protected List<Entities.Entity> LocatedEntities;
-        protected int MaxEffect = 10;
-        protected List<Entities.Entity> Effect;
+        protected List<Entities.Unit> LocatedEntities;
 
 
-        public virtual bool AddEntity(Entities.Entity e)
+        public virtual bool AddEntity(Entities.Unit e)
         {
             if (LocatedEntities.Count + 1 <= MaxLocatedEntities)
             {
