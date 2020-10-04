@@ -6,7 +6,7 @@ namespace Terrain
 
     public abstract class Tile
     {
-        private bool Occupied;
+        protected bool Occupied;
         protected int MaxLocatedEntities = 10;
         protected List<Entities.Unit> LocatedEntities;
 
@@ -15,6 +15,7 @@ namespace Terrain
         {
             if (LocatedEntities.Count + 1 <= MaxLocatedEntities)
             {
+                Occupied = true;
                 LocatedEntities.Add(e);
                 return true;
             }
