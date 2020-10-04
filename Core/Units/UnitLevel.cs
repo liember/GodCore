@@ -21,7 +21,19 @@ namespace Entities
             int beforeNewLevel = _points - _levelup;
             if (beforeNewLevel >= 0)
             {
+                this.NextLevel();
                 _points = beforeNewLevel;
+                return true;
+            }
+            return false;
+        }
+
+        public bool NextLevel()
+        {
+            int newlevel = _current + 1;
+            if (newlevel <= _max)
+            {
+                _current = newlevel;
                 return true;
             }
             return false;
