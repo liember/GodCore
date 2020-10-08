@@ -1,6 +1,5 @@
 namespace Entities
 {
-
     namespace Units
     {
 

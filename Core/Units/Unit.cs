@@ -2,7 +2,7 @@ using System;
 
 namespace Entities
 {
-    public abstract class Unit
+    public class Unit
     {
         protected int Age;
         protected int DieAge;
@@ -11,6 +11,11 @@ namespace Entities
         protected int Health;
         protected int Strength;
         protected int Agility;
+        protected int Speed;
+        protected int Armor;
+        protected int Damage;
+        protected int ViewRange;
+
         protected int Intelligence;
 
 
